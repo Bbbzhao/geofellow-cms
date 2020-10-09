@@ -1,3 +1,5 @@
+CREATE DATABASE `geofellow_cms` /*!40100 COLLATE 'utf8_general_ci' */;
+
 -- ----------------------------
 -- 1、部门表
 -- ----------------------------
