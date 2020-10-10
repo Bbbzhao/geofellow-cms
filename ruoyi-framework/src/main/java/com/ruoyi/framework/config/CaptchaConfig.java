@@ -20,7 +20,7 @@ public class CaptchaConfig {
         DefaultKaptcha defaultKaptcha = new DefaultKaptcha();
         Properties properties = new Properties();
         // 是否有边框 默认为true 我们可以自己设置yes，no
-        properties.setProperty("kaptcha.border", "yes");
+        properties.setProperty("kaptcha.border", "no");
         // 边框颜色 默认为Color.BLACK
         properties.setProperty("kaptcha.border.color", "105,179,90");
         // 验证码文本字符颜色 默认为Color.BLACK
@@ -30,17 +30,20 @@ public class CaptchaConfig {
         // 验证码图片高度 默认为50
         properties.setProperty("kaptcha.image.height", "60");
         // 验证码文本字符大小 默认为40
-        properties.setProperty("kaptcha.textproducer.font.size", "30");
+        properties.setProperty("kaptcha.textproducer.font.size", "50");
         // KAPTCHA_SESSION_KEY
         properties.setProperty("kaptcha.session.key", "kaptchaCode");
         // 验证码文本字符间距 默认为2
         properties.setProperty("kaptcha.textproducer.char.space", "3");
         // 验证码文本字符长度 默认为5
-        properties.setProperty("kaptcha.textproducer.char.length", "6");
+        properties.setProperty("kaptcha.textproducer.char.length", "4");
         // 验证码文本字体样式 默认为new Font("Arial", 1, fontSize), new Font("Courier", 1, fontSize)
         properties.setProperty("kaptcha.textproducer.font.names", "Arial,Courier");
         // 验证码噪点颜色 默认为Color.BLACK
         properties.setProperty("kaptcha.noise.color", "white");
+        // 背景颜色渐变
+        properties.setProperty("kaptcha.background.clear.from", "white");
+        properties.setProperty("kaptcha.background.clear.to", "white");
         Config config = new Config(properties);
         defaultKaptcha.setConfig(config);
         return defaultKaptcha;
@@ -51,7 +54,7 @@ public class CaptchaConfig {
         DefaultKaptcha defaultKaptcha = new DefaultKaptcha();
         Properties properties = new Properties();
         // 是否有边框 默认为true 我们可以自己设置yes，no
-        properties.setProperty("kaptcha.border", "yes");
+        properties.setProperty("kaptcha.border", "no");
         // 边框颜色 默认为Color.BLACK
         properties.setProperty("kaptcha.border.color", "105,179,90");
         // 验证码文本字符颜色 默认为Color.BLACK
