@@ -4,16 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi</artifactId>
+    <groupId>com.geofellow</groupId>
+    <artifactId>geofellow-cms</artifactId>
     <version>3.4.0</version>
 
-    <name>ruoyi</name>
-    <url>https://github.com/lerry903/RuoYi</url>
-    <description>若依管理系统</description>
+    <name>geofellow-cms</name>
+    <url>https://github.com/Bbbzhao/geofellow-cms</url>
+    <description>岩土工程助手后台管理系统</description>
 
     <properties>
-        <ruoyi.version>3.4.0</ruoyi.version>
+        <cms.version>3.4.0</cms.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -44,12 +44,12 @@
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-admin</module>
-        <module>ruoyi-framework</module>
-        <module>ruoyi-system</module>
-        <module>ruoyi-quartz</module>
-        <module>ruoyi-generator</module>
-        <module>ruoyi-common</module>
+        <module>geofellow-cms-admin</module>
+        <module>geofellow-cms-framework</module>
+        <module>geofellow-cms-system</module>
+        <module>geofellow-cms-quartz</module>
+        <module>geofellow-cms-generator</module>
+        <module>geofellow-cms-common</module>
     </modules>
     <packaging>pom</packaging>
 
